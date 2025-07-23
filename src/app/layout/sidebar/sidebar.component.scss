@@ -1,0 +1,39 @@
+.sidebar {
+  width: 220px;
+  background-color: #343a40;
+  color: white;
+  height: 100%;
+  padding: 1rem;
+
+  a {
+    color: white;
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+
+    &:hover {
+      background-color: #495057;
+    }
+  }
+
+  .menu-header {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    background-color: #495057;
+
+    &:hover {
+      background-color: #6c757d;
+    }
+  }
+
+  .submenu {
+    padding-left: 1rem;
+
+    a {
+      padding: 0.25rem 0;
+    }
+  }
+}

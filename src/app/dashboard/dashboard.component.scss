@@ -1,0 +1,21 @@
+.summary-cards {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 2rem;
+  flex-wrap: wrap;
+}
+.card {
+  flex: 1;
+  min-width: 200px;
+  padding: 1rem;
+  border-radius: 10px;
+  color: white;
+  transition: transform 0.2s ease;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.blue { background-color: #007bff; }
+.green { background-color: #28a745; }
+.purple { background-color: #6f42c1; }
+.red { background-color: #dc3545; }

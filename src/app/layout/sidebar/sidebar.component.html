@@ -1,0 +1,59 @@
+<div class="sidebar">
+ <a routerLink="/dashboard">Dashboard</a>
+<a routerLink="/employees">Employees</a>
+
+<!-- Attendance -->
+<div class="menu-group">
+  <div class="menu-header" (click)="toggleAttendance()">
+    Attendance
+    <mat-icon>{{ isAttendanceOpen ? 'expand_less' : 'chevron_right' }}</mat-icon>
+  </div>
+  <div *ngIf="isAttendanceOpen" class="submenu">
+    <a routerLink="/attendance/view">View</a>
+    <a routerLink="/attendance/summary">Summary</a>
+  </div>
+</div>
+
+<!-- Settings -->
+<div class="menu-group">
+  <div class="menu-header" (click)="toggleSettings()">
+    Settings
+    <mat-icon>{{ isSettingsOpen ? 'expand_less' : 'chevron_right' }}</mat-icon>
+  </div>
+  <div *ngIf="isSettingsOpen" class="submenu">
+    <a routerLink="/settings/users">User Roles</a>
+    <a routerLink="/settings/permissions">Permissions</a>
+  </div>
+</div>
+
+<!-- Leave Management -->
+<a routerLink="/leaves">Leave Management</a>
+
+<!-- Payroll -->
+<a routerLink="/payroll">Payroll</a>
+
+<!-- Recruitment -->
+<div class="menu-group">
+  <div class="menu-header" (click)="toggleRecruitment()">
+    Recruitment
+    <mat-icon>{{ isRecruitmentOpen ? 'expand_less' : 'chevron_right' }}</mat-icon>
+  </div>
+  <div *ngIf="isRecruitmentOpen" class="submenu">
+    <a routerLink="/recruitment/openings">Job Openings</a>
+    <a routerLink="/recruitment/applicants">Applicants</a>
+  </div>
+</div>
+
+<!-- Performance -->
+<a routerLink="/performance">Performance Reviews</a>
+
+<!-- Training -->
+<a routerLink="/training">Training & Development</a>
+
+<!-- Announcements -->
+<a routerLink="/announcements">Announcements</a>
+
+<!-- Documents -->
+<a routerLink="/documents">Employee Documents</a>
+
+</div>

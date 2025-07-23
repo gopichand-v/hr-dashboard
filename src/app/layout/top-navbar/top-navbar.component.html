@@ -1,0 +1,15 @@
+<nav class="top-navbar">
+  <div class="logo">🧑‍💼 HR Dashboard</div>
+
+  <div class="user-actions">
+    <mat-icon>account_circle</mat-icon>
+    <span class="username">John Doe</span>
+    <mat-menu #userMenu="matMenu">
+      <button mat-menu-item>Change Password</button>
+      <button mat-menu-item>Logout</button>
+    </mat-menu>
+    <button mat-icon-button [matMenuTriggerFor]="userMenu">
+      <mat-icon>arrow_drop_down</mat-icon>
+    </button>
+  </div>
+</nav>

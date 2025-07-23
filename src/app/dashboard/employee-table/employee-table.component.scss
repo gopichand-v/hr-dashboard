@@ -1,0 +1,24 @@
+.employee-table-container {
+  margin: 2rem;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 0.8rem;
+  border-bottom: 1px solid #ccc;
+}
+tr:hover {
+  background-color: #f9f9f9;
+}
+th {
+  background-color: #004080;
+  color: white;
+}
+.table-wrapper {
+  padding-bottom: 60px; /* So the footer doesn't overlap */
+}
+td{
+  text-align:center;
+}
