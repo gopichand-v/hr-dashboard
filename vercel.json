@@ -1,17 +1,11 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "angular.json",
-      "use": "@vercel/static-build"
-    }
-  ],
+  "buildCommand": "npm run build -- --configuration=production",
+  "outputDirectory": "dist/hr-dashboard",
   "routes": [
     {
       "src": "/(.*)",
       "dest": "/index.html"
     }
-  ],
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist/hr-dashboard"
+  ]
 }
