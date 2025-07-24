@@ -37,3 +37,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     padding-right:0px;
     padding-left:250px;
 }
+
+.main-body,
+.content-area {
+  margin-top: 30px; // adjust based on actual navbar height
+}

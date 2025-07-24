@@ -3,13 +3,19 @@
   color: white;
   display: flex;
   justify-content: space-between;
-  padding: 0.75rem 1rem;
+  padding: 0.75rem 0rem;
   align-items: center;
+
+  position: fixed;     // 🟢 fixed position
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;        // 🟢 ensures it's above other content
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
   .logo {
     font-weight: bold;
     font-size: 1.3rem;
-    z-index:1;
   }
 
   .user-actions {
